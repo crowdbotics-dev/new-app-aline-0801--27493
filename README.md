@@ -65,7 +65,6 @@ This section will show any installed modules you add from the Storyboard Modules
 - [screen-account-settings](screens/account-settings)
 - [django-push-notifications](backend/modules)
 - [react-native-app-menu](modules/app-menu)
-- [camera]()
 
 # Getting started: Frontend
 
