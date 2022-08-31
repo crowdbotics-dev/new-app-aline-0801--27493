@@ -59,7 +59,6 @@ This react_native application was built with Crowdbotics www.crowdbotics.com
 
 This section will show any installed modules you add from the Storyboard Modules section.
 - [react-native-onboarding](modules/onboarding)
-- [django-articles](backend/modules)
 - [react-native-articles](modules/articles)
 - [react-native-chat](modules/chat)
 - [screen-account-settings](screens/account-settings)
