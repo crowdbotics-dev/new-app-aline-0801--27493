@@ -19,8 +19,8 @@ const Untitled1 = () => {
       fontSize: 14,
       borderRadius: 0
     }}>Lorem ipsum… </Text><View style={{
-      left: 16,
-      top: 107,
+      left: 18,
+      top: 76,
       position: "absolute",
       height: 60,
       width: 140,
@@ -28,8 +28,8 @@ const Untitled1 = () => {
       borderRadius: 0,
       color: "#777777"
     }}></View><View style={{
-      left: 36,
-      top: 193,
+      left: 217,
+      top: 101,
       position: "absolute",
       height: 60,
       width: 140,

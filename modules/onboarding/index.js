@@ -1,35 +1,33 @@
 import React from "react";
-import {
-  View,
-  Image,
-  Text,
-  StyleSheet
-} from "react-native";
+import { View, Image, Text, StyleSheet } from "react-native";
 import { slides } from "./slides";
 import AppIntroSlider from "react-native-app-intro-slider";
-
 const REDIRECT_SCREEN_NAME = "LoginAndSignup177769";
 
-const Onboarding = ({ navigation }) => {
-  const renderItem = ({ item }) => {
-    return (
-      <View style={[styles.slide, { backgroundColor: item.backgroundColor }]}>
+const Onboarding = ({
+  navigation
+}) => {
+  const renderItem = ({
+    item
+  }) => {
+    return <View style={[styles.slide, {
+      backgroundColor: item.backgroundColor
+    }]}>
         <Text style={styles.title}>{item.title}</Text>
         <Image style={styles.image} source={item.image} />
         <Text style={styles.text}>{item.text}</Text>
-      </View>
-    );
+      </View>;
   };
 
   const onDone = () => {
     navigation.navigate(REDIRECT_SCREEN_NAME);
   };
 
-  return (
-    <View style={{ flex: 1 }}>
+  return <View style={{
+    flex: 1
+  }}>
       <AppIntroSlider renderItem={renderItem} data={slides} onDone={onDone} />
-    </View>
-  );
+    </View>;
 };
 
 const styles = StyleSheet.create({
@@ -57,7 +55,6 @@ const styles = StyleSheet.create({
     textAlign: "center"
   }
 });
-
 export default {
   title: "Onboarding",
   navigator: Onboarding

@@ -1,66 +1,52 @@
 import React, { useState } from "react";
-import {
-  StyleSheet,
-  Text,
-  SafeAreaView,
-  Button,
-  View,
-  LogBox
-} from "react-native";
+import { StyleSheet, Text, SafeAreaView, Button, View, LogBox } from "react-native";
 import EmojiSelector from "react-native-emoji-selector";
 import Chat from "./chat";
-
 import { createStackNavigator } from "@react-navigation/stack";
-
 import PubNub from "pubnub";
 import { PubNubProvider } from "pubnub-react";
 const Stack = createStackNavigator();
 
-const EmojiPicker = ({ navigation }) => {
+const EmojiPicker = ({
+  navigation
+}) => {
   // In here we are storing our currently picked emoji.
-  const [chosenEmoji, setEmoji] = useState(null);
+  const [chosenEmoji, setEmoji] = useState(null); // This method will be called when our user selects an emoji
 
-  // This method will be called when our user selects an emoji
-  const handleEmojiSelected = (emoji) => {
+  const handleEmojiSelected = emoji => {
     setEmoji(emoji);
-  };
-
-  // This method will be called when our user wants to continue with
+  }; // This method will be called when our user wants to continue with
   // currently selected emoji - this method will do nothing if user
   // didn't pick an emoji.
+
+
   const handleContinueButton = () => {
     if (chosenEmoji !== null) {
-      navigation.replace("Chat", { emoji: chosenEmoji });
+      navigation.replace("Chat", {
+        emoji: chosenEmoji
+      });
     }
   };
 
-  return (
-    <SafeAreaView style={styles.container}>
+  return <SafeAreaView style={styles.container}>
       <View style={styles.topContainer}>
         <Text style={styles.hint}>
           Pick an emoji that will represent you in the chat
         </Text>
-        <View
-          style={{
-            ...styles.emojiContainer,
-            ...(chosenEmoji === null ? styles.empty : {})
-          }}
-        >
+        <View style={{ ...styles.emojiContainer,
+        ...(chosenEmoji === null ? styles.empty : {})
+      }}>
           <Text style={styles.emoji}>{chosenEmoji || ""}</Text>
         </View>
-        <Button
-          // If user haven't chosen an emoji, we disable the continue button
-          disabled={chosenEmoji === null}
-          style={styles.continueButton}
-          title="Continue"
-          onPress={handleContinueButton}
-        />
+        <Button // If user haven't chosen an emoji, we disable the continue button
+      disabled={chosenEmoji === null} style={styles.continueButton} title="Continue" onPress={handleContinueButton} />
       </View>
-      <View style={{ height: "50%" }}>
+      <View style={{
+      height: "50%"
+    }}>
         <EmojiSelector onEmojiSelected={handleEmojiSelected} />
       </View>
-    </SafeAreaView>
-  );
+    </SafeAreaView>;
 };
 
 const styles = StyleSheet.create({
@@ -104,24 +90,20 @@ const styles = StyleSheet.create({
     borderColor: "rgba(0, 0, 0, 0.2)"
   }
 });
-
 const pubnub = new PubNub({
   subscribeKey: "demo",
   publishKey: "demo",
   uuid: "0"
 });
-
 LogBox.ignoreAllLogs(true);
 
 const ChatNavigator = () => {
-  return (
-    <PubNubProvider client={pubnub}>
+  return <PubNubProvider client={pubnub}>
       <Stack.Navigator headerMode="none" initialRouteName="EmojiPicker">
         <Stack.Screen name="EmojiPicker" component={EmojiPicker} />
         <Stack.Screen name="Chat" component={Chat} />
       </Stack.Navigator>
-    </PubNubProvider>
-  );
+    </PubNubProvider>;
 };
 
 export default {
