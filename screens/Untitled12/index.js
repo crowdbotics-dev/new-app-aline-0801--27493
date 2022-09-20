@@ -1,15 +1,15 @@
 import React from "react";
 import { View, StyleSheet } from "react-native";
 
-const Untitled2 = () => {
-  return <View style={_styles.yhbbVXIO}>
+const Untitled12 = () => {
+  return <View style={_styles.UzAcTsUV}>
       </View>;
 };
 
-export default Untitled2;
+export default Untitled12;
 
 const _styles = StyleSheet.create({
-  yhbbVXIO: {
+  UzAcTsUV: {
     backgroundColor: "#f0f0f1",
     padding: 10,
     position: "relative",
