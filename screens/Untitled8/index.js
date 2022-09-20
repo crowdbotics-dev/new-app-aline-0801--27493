@@ -1,15 +1,15 @@
 import React from "react";
 import { View, StyleSheet } from "react-native";
 
-const Untitled2 = () => {
-  return <View style={_styles.IwyMAXer}>
+const Untitled8 = () => {
+  return <View style={_styles.YvyaWCAm}>
       </View>;
 };
 
-export default Untitled2;
+export default Untitled8;
 
 const _styles = StyleSheet.create({
-  IwyMAXer: {
+  YvyaWCAm: {
     backgroundColor: "#f0f0f1",
     padding: 10,
     position: "relative",
