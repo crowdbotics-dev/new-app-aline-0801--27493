@@ -65,6 +65,7 @@ This section will show any installed modules you add from the Storyboard Modules
 - [camera]()
 - [react-native-live-camera-filters](modules/live-camera-filters)
 - [screen-activity-feed](screens/activity-feed)
+- [screen-add-task-vehicle](screens/add-task-vehicle)
 
 # Getting started: Frontend
 

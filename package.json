@@ -19,6 +19,7 @@
     "@reduxjs/toolkit": "^1.5.0",
     "@screens/account-settings": "file:./screens/account-settings/",
     "@screens/activity-feed": "file:./screens/activity-feed/",
+    "@screens/add-task-vehicle": "file:./screens/add-task-vehicle/",
     "axios": "^0.21.1",
     "react": "17.0.1",
     "react-dom": "^18.2.0",
