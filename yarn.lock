@@ -1235,11 +1235,8 @@
 "@screens/account-settings@file:./screens/account-settings":
   version "1.0.0"
 
-"@screens/activity-feed@file:./screens/activity-feed":
+"@screens/add-task-vehicle@file:./screens/add-task-vehicle":
   version "0.0.0"
-
-"@screens/add-task-vehicle@file:./screens/add-task-vehicle/":
-  version "1.0.0"
 
 "@sideway/address@^4.1.3":
   version "4.1.4"
