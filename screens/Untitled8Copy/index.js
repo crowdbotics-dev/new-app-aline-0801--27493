@@ -2,12 +2,12 @@ import { Pressable } from "react-native";
 import React from "react";
 import { View, StyleSheet } from "react-native";
 
-const Untitled8 = () => {
+const Untitled8Copy = () => {
   return <View style={_styles.OCXkGgor}>
-      <Pressable onPress={() => navigation.navigate("Untitled12")} style={_styles.xRXxQWms}><View style={_styles.vwUlsseK}></View></Pressable></View>;
+      <Pressable onPress={() => navigation.navigate("Untitled9")} style={_styles.xRXxQWms}><View style={_styles.vwUlsseK}></View></Pressable></View>;
 };
 
-export default Untitled8;
+export default Untitled8Copy;
 
 const _styles = StyleSheet.create({
   OCXkGgor: {
