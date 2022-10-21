@@ -22,10 +22,7 @@ const _styles = StyleSheet.create({
   },
   wajpyxhG: {
     borderWidth: 2,
-    display: "block",
-    flexDirection: "row",
-    alignItems: "end",
-    justifyContent: "space-evenly"
+    display: "block"
   },
   zcRjNsoC: {
     width: 50,
