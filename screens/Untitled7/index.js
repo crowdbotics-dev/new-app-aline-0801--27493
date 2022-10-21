@@ -22,7 +22,8 @@ const _styles = StyleSheet.create({
   },
   wajpyxhG: {
     borderWidth: 2,
-    display: "block"
+    display: "block",
+    height: 300
   },
   zcRjNsoC: {
     width: 50,
@@ -38,5 +39,14 @@ const _styles = StyleSheet.create({
     width: 50,
     height: 50,
     backgroundColor: "lightgreen"
+  },
+  qHbbSSUE: {
+    height: 60,
+    width: 140,
+    backgroundColor: "#E4E4E4",
+    borderRadius: 0,
+    color: "#777777",
+    flexDirection: "row",
+    display: "flex"
   }
 });
