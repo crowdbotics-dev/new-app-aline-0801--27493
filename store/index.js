@@ -11,3 +11,5 @@ export const connectors = slices.reduce((acc, slice) => {
   acc[name] = slice.reducer;
   return acc;
 }, {});
+
+console.log(slices);
