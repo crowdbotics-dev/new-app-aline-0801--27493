@@ -51,6 +51,7 @@ const getNavigation = (modules, screens, initialRoute) => {
 
 const getStore = globalState => {
   const appReducer = createReducer(globalState, _ => {
+    console.log(globalState);
     return globalState
   })
 
@@ -67,10 +68,8 @@ const getStore = globalState => {
 }
 
 const App = () => {
-  console.log("\nGlobalOptionsContext", GlobalOptionsContext)
-  console.log("\nOptionsContext", OptionsContext)
-  console.log("\ngetOptions", getOptions)
   const global = useContext(GlobalOptionsContext)
+  console.log(global, GlobalOptionsContext);
   const Navigation = getNavigation(modules, screens, initialRoute)
   const store = getStore(global)
 
