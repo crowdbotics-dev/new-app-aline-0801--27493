@@ -18,7 +18,6 @@ const Stack = createStackNavigator()
 import { GlobalOptionsContext, OptionsContext, getOptions } from "@options"
 
 const getNavigation = (modules, screens, initialRoute) => {
-  console.log(screens, modules);
   const Navigation = () => {
     const routes = modules.concat(screens).map(mod => {
       const pakage = mod.package;
@@ -51,6 +50,7 @@ const getNavigation = (modules, screens, initialRoute) => {
 }
 
 const getStore = (globalState) => {
+  console.log(connectors, reducers);
   const appReducer = createReducer(globalState, _ => {
     return globalState
   })
