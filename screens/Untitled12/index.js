@@ -17,8 +17,8 @@ const _styles = StyleSheet.create({
     height: "100%"
   },
   XOMkMtqz: {
-    left: 109,
-    top: 36,
+    left: 96,
+    top: 74,
     position: "absolute",
     height: 134,
     width: 140,
@@ -29,8 +29,8 @@ const _styles = StyleSheet.create({
     opacity: 0.82
   },
   EMVRkJCv: {
-    left: 135,
-    top: 94,
+    left: 109,
+    top: 127,
     position: "absolute",
     width: 100,
     height: 50,
